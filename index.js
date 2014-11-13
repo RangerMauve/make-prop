@@ -1,3 +1,5 @@
+module.exports = makeProp;
+
 /**
  * Creates a function for making objects with a given property
  * @param   {String}        prop Property to create on generated object
