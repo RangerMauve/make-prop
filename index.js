@@ -9,6 +9,6 @@ function makeProp(prop) {
 	return function (value) {
 		var object = {};
 		object[prop] = value;
-		return value;
+		return object;
 	}
 }
