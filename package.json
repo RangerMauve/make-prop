@@ -1,0 +1,25 @@
+{
+  "name": "make-prop",
+  "version": "1.0.0",
+  "description": "Creates a function that takes in a value, and ouputs an object with that value as a property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RangerMauve/make-prop.git"
+  },
+  "keywords": [
+    "prop",
+    "make",
+    "functional",
+    "propety"
+  ],
+  "author": "RangerMauve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RangerMauve/make-prop/issues"
+  },
+  "homepage": "https://github.com/RangerMauve/make-prop"
+}
