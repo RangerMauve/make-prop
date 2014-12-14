@@ -1,6 +1,6 @@
 {
   "name": "make-prop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates a function that takes in a value, and ouputs an object with that value as a property",
   "main": "index.js",
   "scripts": {

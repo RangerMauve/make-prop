@@ -1,7 +1,6 @@
 # make-prop
 
-Creates a function that takes in a value, and ouputs an object with that value
-as a property.
+Take a keypath, create a function which takes a value, and outputs an object with that value under that keypath. Basically a reverse version of [prop](https://www.npmjs.com/package/prop).
 
 ## Installing
 
@@ -9,15 +8,17 @@ as a property.
 
 ## API
 
-### `makeProp(prop)`
+### `makeProp(props)`
+
+Creates a function for making objects with a given property
 
 #### parameters
 
-* `prop` (String): Property to create on generated object
+* `props` (String): Keypath for the generated object
 
 #### returns
 
-(Function(Any)): This function takes a value and outputs an object with that value under a given property
+* Function: This function takes a value and outputs an object with that value under a given property
 
 ## Example
 
@@ -26,8 +27,16 @@ var makeProp = require("make-prop");
 
 var values = ["foo", "bar", "bazz", "fizz"];
 
-var result = values.map(makeProp("name"));
+var result = values.map(makeProp("person.name"));
 
 console.log("Input values:", values);
 console.log("Output values:", result);
+/*
+[
+	{ person: { name: 'foo' } },
+	{ person: { name: 'bar' } },
+	{ person: { name: 'bazz' } },
+	{ person: { name: 'fizz' } }
+]
+*/
 ```
