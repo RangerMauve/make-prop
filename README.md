@@ -2,6 +2,8 @@
 
 Take a keypath, create a function which takes a value, and outputs an object with that value under that keypath. Basically a reverse version of [prop](https://www.npmjs.com/package/prop).
 
+Any keys that are integers will be used as array indexes.
+
 ## Installing
 
 `npm install --save make-prop`
